@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ScrollTextView">
+        <attr name="scrollTextColor" format="color"/>
+        <attr name="scrollSpeed">
+            <enum name="slow" value="1"/>
+            <enum name="normal" value="2"/>
+            <enum name="fast" value="3"/>
+        </attr>
+    </declare-styleable>
+
+
+</resources>

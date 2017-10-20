@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.xls.scrolltext.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <com.xls.library.ScrollTextView
+        android:id="@+id/marqueeView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#a0000000"
+        android:layout_alignParentTop="true"
+        app:scrollSpeed="normal"
+        app:scrollTextColor="@android:color/white"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:text="打扫房间大神卡李方军啊三角阀神卡了积分多少的发送冷风机"/>
+
+    <com.xls.library.ScrollTextView
+        android:id="@+id/marqueeView1"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="#a0000000"
+        app:layout_constraintTop_toBottomOf="@id/marqueeView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:scrollSpeed="normal"
+        app:scrollTextColor="@android:color/white"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:text="分开啦送到家里道法就拉伸进口零食道法就"/>
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="开始"/>
+    <Button
+        android:id="@+id/btn_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/btn_start"
+        android:text="暂停"/>
+    <Button
+        android:id="@+id/btn_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/btn_pause"
+        android:text="停止"/>
+
+    <Button
+        android:id="@+id/btn_slow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        android:text="慢"/>
+    <Button
+        android:id="@+id/btn_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_slow"
+        android:text="中"/>
+    <Button
+        android:id="@+id/btn_fast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_normal"
+        android:text="快"/>
+
+
+</android.support.constraint.ConstraintLayout>
